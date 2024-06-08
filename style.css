@@ -37,7 +37,7 @@ header {
 #to-favorite {
   display: flex;
   align-items: center;
-  gap: .8rem;
+  gap: 0.8rem;
 }
 
 input {
@@ -64,11 +64,66 @@ button {
   display: inline-flex;
   align-items: center;
 
-  gap: .8rem;
+  gap: 0.8rem;
 }
 
 #app {
   display: flex;
   max-width: 112rem;
+}
 
+table {
+  width: 100%;
+  max-height: 22.4rem;
+  border-top: 1px solid #4a808c;
+  border-left: 1px solid #4a808c;
+  border-right: 1px solid #4a808c;
+  border-bottom: 1px solid #4a808c;
+  border-radius: 1.2rem;
+  border-spacing: 0;
+  border-collapse: separate;
+
+  font-size: 2rem;
+}
+
+table th {
+  background-color: #092d38;
+  padding: 1.6rem 4rem;
+  text-align: left;
+}
+
+table th:first-child {
+  border-top-left-radius: 1.2rem;
+}
+
+table th:last-child {
+  border-top-right-radius: 1.2rem;
+}
+
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 1.2rem;
+}
+
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 1.2rem;
+}
+
+table tbody td {
+  padding: 2.4rem 4rem;
+  overflow: hidden;
+}
+
+table tr:nth-child(even) td {
+  background-color: #06181c;
+  border-top: 1px solid #4a808c;
+}
+
+table tbody tr:nth-child(odd):not(:first-child) td{
+  border-top: 1px solid #4a808c;
+}
+
+tbody tr td:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 }
