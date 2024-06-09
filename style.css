@@ -52,6 +52,8 @@ input {
   border: none;
   padding: 1.6rem;
   font-family: "Roboto", sans-serif;
+  color: #7c7c8a;
+
 }
 
 input::placeholder {

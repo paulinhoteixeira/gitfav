@@ -17,12 +17,27 @@ export class Favorites{
     this.root = document.querySelector(root)
     this.load()
 
-    GithubUser.search('paulinhoteixeira').then(user => console.log(user))
   }
 
   load(){
 
     this.entries = JSON.parse(localStorage.getItem('@github-favorites:')) || []
+  }
+
+  async add(username){
+    try{
+      const user = await GithubUser.search(username)
+      console.log(user)
+
+      if(user.login === undefined){
+        throw new Error("Usuário não encontrado")
+      }
+
+      this.entries = [user, ...this.entries]
+      this.update()
+    }catch(err){
+      alert(error.message)
+    }
   }
 
   delete(user){
@@ -40,6 +55,16 @@ export class FavoriteView extends Favorites{
     this.tbody = this.root.querySelector('table tbody')
 
     this.update()
+    this.onadd()
+  }
+
+  onadd(){
+    const addButton = document.querySelector('#to-favorite button')
+    addButton.onclick = () => {
+      const {value} = document.querySelector("input")
+
+      this.add(value)
+    }
   }
 
   update(){
