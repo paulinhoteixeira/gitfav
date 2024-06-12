@@ -77,6 +77,26 @@ button {
   align-items: center;
 
   gap: 0.8rem;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+.icon-svg{
+  fill: white;
+  transition: .3s;
+
+}
+
+button:hover{
+  background-color: #fff;
+  color: #065e7c;
+  fill: #065e7c;
+}
+
+button:hover .icon-svg{
+  fill: #065e7c;
+
 }
 
 #app {
