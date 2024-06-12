@@ -97,8 +97,8 @@ export class FavoriteView extends Favorites {
   emptyTable() {
     const trEmpty = document.createElement("tr");
     trEmpty.innerHTML = `
-      <tr class="empty-table">
-          <td>
+      <tr >
+          <td class="empty-table">
             <img src="./assets/Estrela.svg" alt="">
             <p>Nenhum favorito ainda</p>
           </td>

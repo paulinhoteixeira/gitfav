@@ -146,7 +146,7 @@ thead, tr {
 tbody{
   display:block;
   overflow-y: auto;
-  height: 300px;
+  max-height: 30rem;
   width:100%;
 
 }
@@ -181,4 +181,21 @@ tbody tr td:nth-child(1) {
 
 .remove{
   color: #F75A68;
+}
+
+.empty-table{
+  justify-content: center;
+  min-height: 28rem;
+}
+
+.empty-table > p{
+  font-size: 4rem;
+  color: #4E5455;
+  margin-left: 6rem;
+}
+
+.empty-table > img{
+  width: 13.2rem;
+  height: 12.5rem;
+  border-radius: 0;
 }
