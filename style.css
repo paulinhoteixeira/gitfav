@@ -63,7 +63,7 @@ input::placeholder {
   font-family: "Roboto", sans-serif;
 }
 
-button {
+#addfavorite {
   border-radius: 0.5rem;
   border: none;
   background: #065e7c;
@@ -88,13 +88,13 @@ button {
 
 }
 
-button:hover{
+#addfavorite:hover{
   background-color: #fff;
   color: #065e7c;
   fill: #065e7c;
 }
 
-button:hover .icon-svg{
+#addfavorite:hover .icon-svg{
   fill: #065e7c;
 
 }
@@ -199,8 +199,15 @@ tbody tr td:nth-child(1) {
   gap: 0.8rem;
 }
 
-.remove{
+.remove button{
+  display: flex;
+  background-color: transparent;
+  border: none;
   color: #F75A68;
+  font-size: 2rem;
+  font-family: Roboto;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .empty-table{

@@ -63,6 +63,8 @@ export class FavoriteView extends Favorites {
     };
   }
 
+  
+
   update() {
     if (this.entries.length == 0) {
       const emptyTable = this.emptyTable()
@@ -121,7 +123,7 @@ export class FavoriteView extends Favorites {
           </td>
           <td class="repositories">123</td>
           <td class="followers">1234</td>
-          <td class="remove">Remover</td>
+          <td class="remove"><button>Remover</button></td>
         </tr>  
    `;
     return tr;
