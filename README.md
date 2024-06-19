@@ -5,7 +5,7 @@
 <br>
 
 <p align="center">
-  <img alt="GitFav" src="/gitFav1.jpg" width="100%">
+  <img alt="GitFav" src="/gitFav1.JPG" width="100%">
 </p>
 
 ## 🚀 Tecnologias
