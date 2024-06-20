@@ -132,6 +132,11 @@ table img{
   object-fit: cover;
 }
 
+.name a{
+  text-decoration: none;
+  color:#e1e1e6;
+
+}
 .user{
   font-weight: 400;
 }

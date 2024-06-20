@@ -79,8 +79,9 @@ export class FavoriteView extends Favorites {
 
       row.querySelector("td img").src = `https://github.com/${user.login}.png`;
       row.querySelector("td img").alt = `Foto de ${user.name}`;
-      row.querySelector(".name").textContent = user.name;
-      row.querySelector(".user").textContent = `${user.login}`;
+      row.querySelector(".name a").textContent = user.name;
+      row.querySelector(".name a").href = `https://github.com/${user.login}`;
+      row.querySelector(".user").textContent = user.login;
       row.querySelector(".repositories").textContent = user.public_repos;
       row.querySelector(".followers").textContent = user.followers;
 
@@ -117,7 +118,7 @@ export class FavoriteView extends Favorites {
           <td>
             <img src="./assets/Ellipse 3.svg" alt="">
             <div class="info-user">
-              <div class="name">Paulo Teixeira</div>
+              <div class="name"><a href="https://github.com/paulinhoteixeira">Paulo Teixeira</a></div>
               <div class="user">/paulinhoteixeira</div>
             </div>
           </td>
